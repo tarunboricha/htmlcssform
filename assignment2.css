@@ -1,12 +1,13 @@
-a{
+a {
     cursor: pointer;
 }
+
 .center {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 10vh;
     /* border: 2px solid; */
 }
 
@@ -14,8 +15,6 @@ a{
     background-color: #f4f2f2;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
     /* border: 2px solid; */
-    width: 25%;
-    padding: 2%;
 }
 
 .head,
@@ -37,20 +36,20 @@ a{
     /* IE10 */
     display: flex;
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 3vh;
 }
 
 .icon {
-    padding: 10px;
+    padding: 1.7vh;
     background: dodgerblue;
     color: white;
-    min-width: 50px;
+    /* min-width: 1vw; */
     text-align: center;
 }
 
 .fa.fa-user.icon,
 .fa.fa-key.icon,
-.fa.fa-envelope.icon{
+.fa.fa-envelope.icon {
     padding-left: 0px;
     padding-right: 0px;
     min-width: 40px;
@@ -73,7 +72,7 @@ input.input-field {
 
 i.fa.fa-user.icon,
 i.fa.fa-key.icon,
-i.fa.fa-envelope.icon{
+i.fa.fa-envelope.icon {
     background: #dddfe0;
     color: #495057;
 }
@@ -138,25 +137,47 @@ button.btn.btn-primary {
     width: 100%;
 }
 
-.donthaveaccsignin, .donthaveaccsignup {
+.donthaveaccsignin,
+.donthaveaccsignup {
     margin-top: 10px;
 }
-.donthaveaccsignup{
-    display: none;
-}
-#signup{
+
+.donthaveaccsignup {
     display: none;
 }
 
-div.hrlinesignup{
+#signup {
+    display: none;
+}
+
+div.hrlinesignup {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 10%;
 }
+
 @media only screen and (max-width: 600px) {
     .containerr {
         width: 80%;
         padding: 5%;
+    }
+}
+@media (min-width:768px) {
+    .containerr {
+        width: 50%;
+        padding: 5%;
+    }
+}
+@media (min-width:1024px) {
+    .containerr {
+        width: 32vw;
+        padding: 2%;
+    }
+}
+@media (min-width:1280px) {
+    .containerr {
+        width: 25vw;
+        padding: 2%;
     }
 }
