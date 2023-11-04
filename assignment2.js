@@ -17,6 +17,12 @@ function showsignup(){
     document.getElementsByClassName('donthaveaccsignup')[0].style.display = 'block';
 }
 
+function clearr(){
+    document.getElementById('signupuser').value = '';
+    document.getElementById('signupemail').value = '';
+    document.getElementById('signuppass').value = '';
+}
+
 function signup(){
     let usernamee = document.getElementById('signupuser').value;
     let emaill = document.getElementById('signupemail').value;
@@ -39,6 +45,7 @@ function signup(){
     }
     dataInformation[dataInformation.length] = information;
     localStorage.setItem('credential', JSON.stringify(dataInformation));
+    clearr();
 }
 
 function signin(){
@@ -47,8 +54,10 @@ function signin(){
     for(let i = 0; i< dataInformation.length;i++){
         if(usernamee == dataInformation[i].username && passwordd == dataInformation[i].password){
             alert('Sign in Successfully');
+            clearr();
             return;
         }
     }
     alert('Credential is not correct');
+    clearr();
 }
