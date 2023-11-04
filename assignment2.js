@@ -21,6 +21,8 @@ function clearr(){
     document.getElementById('signupuser').value = '';
     document.getElementById('signupemail').value = '';
     document.getElementById('signuppass').value = '';
+    document.getElementById('signinuser').value = '';
+    document.getElementById('signinpass').value = '';
 }
 
 function signup(){
