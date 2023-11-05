@@ -1,0 +1,179 @@
+a {
+    cursor: pointer;
+}
+
+.center {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
+    /* border: 2px solid; */
+}
+
+.containerr {
+    background-color: #f4f2f2;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    /* border: 2px solid; */
+}
+
+.head,
+.username,
+.pass,
+.signinbtn,
+.socialmedtext {
+    display: flex;
+    justify-content: center;
+}
+
+.remember {
+    display: flex;
+    flex-direction: row;
+}
+
+.input-containerr {
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin-bottom: 3vh;
+}
+
+.icon {
+    padding: 1.7vh;
+    background: dodgerblue;
+    color: white;
+    text-align: center;
+}
+
+.fa.fa-user.icon,
+.fa.fa-key.icon,
+.fa.fa-envelope.icon {
+    padding-left: 0px;
+    padding-right: 0px;
+    min-width: 40px;
+    border-radius: 5%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+input.input-field {
+    padding: 0 10px;
+    border: none;
+    border-radius: 0;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+}
+
+i.fa.fa-user.icon,
+i.fa.fa-key.icon,
+i.fa.fa-envelope.icon {
+    background: #dddfe0;
+    color: #495057;
+}
+
+.input-field:focus {
+    border: 2px solid dodgerblue;
+}
+
+.section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid;
+}
+
+.section {
+    display: flex;
+    flex-direction: row;
+}
+
+div.section {
+    padding: 5% 0%;
+}
+
+div.hrline {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.or {
+    background: #f7f7f7;
+    position: relative;
+    top: -0.75rem;
+}
+
+.hrline1,
+.hrline2 {
+    width: 43%;
+    border-top: solid 1px rgb(202, 201, 201);
+}
+
+.socialmedbutn {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+button.btn.btn-primary {
+    background-color: #007bff;
+    width: 100%;
+}
+
+.input button {
+    width: 100%;
+}
+
+.donthaveaccsignin,
+.donthaveaccsignup {
+    margin-top: 10px;
+}
+
+.donthaveaccsignup {
+    display: none;
+}
+
+#signup {
+    display: none;
+}
+
+div.hrlinesignup {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10%;
+}
+
+@media only screen and (max-width: 600px) {
+    .containerr {
+        width: 80%;
+        padding: 5%;
+    }
+}
+@media (min-width:768px) {
+    .containerr {
+        width: 50%;
+        padding: 5%;
+    }
+}
+@media (min-width:1024px) {
+    .containerr {
+        width: 32vw;
+        padding: 2%;
+    }
+}
+@media (min-width:1280px) {
+    .containerr {
+        width: 25vw;
+        padding: 2%;
+    }
+}
